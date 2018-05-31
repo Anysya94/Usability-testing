@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Geron App Project</title>
+    <link rel="stylesheet" href="scholarly.css">
+    <link rel="stylesheet" href="node_modules/prismjs/themes/prism-coy.css">
+    <script src="node_modules/prismjs/prism.js" defer></script>
+  </head>
+  <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+      <p class="title">Geron App</p>
+      <p class="subtitle">Scholarly Html Technical Report </p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+      <h1><img src="images/MainLOGO.png" style="width:35px;height:35px; margin-right:15px; margin-top:10px"> <div style="padding-top:20px; padding-bottom:20px">Geron App</div></h1>
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" href="https://bitbucket.org/lordusmd/" typeof="schema:Person">
+              <span property="schema:givenName">Tetelea</span>
+              <span property="schema:familyName">Alexandru</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:alexandru.tetelea@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" href="https://bitbucket.org/anisia_lupu/" typeof="schema:Person">
+              <span property="schema:givenName">Anisia-Ioana</span>
+              <span property="schema:familyName">Lupu</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:ioana.lupu@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+        </ol>
+        <ol>
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:author" href="http://profs.info.uaic.ro/~busaco" typeof="schema:Person">
+              <span property="schema:givenName">Dr. Sabin-Corneliu</span>
+              <span property="schema:familyName">Buraga</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:busaco@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:author" href="http://??" typeof="schema:Person">
+              <span property="schema:givenName">Alecsandru</span>
+              <span property="schema:familyName">Grigoriu</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:??" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+        </ol>
+      </section>
+
+      <section typeof="sa:Abstract" id="abstract">
+        <h1>Abstract</h1>
+      </p>  Our challenge was to build a
+      smart application which using gestures from users can connects to lots of different devices from different brands. 
+      This means you can control your lighting, TV, wireless socket switches, blinds, thermostat and stereo within the same
+       mobile application. No more searching for remotes, 
+      no more switching applications. Easily turn on some nice music while adjusting the lights to fit the mood.
+    </p>
+      </section>
+      <section typeof="sa:MaterialsAndMethods" id="motivation">
+        <h1>Motivation</h1>
+        <p>
+           In the past few years, there has been a huge interest to bring smart home technology to the fore,
+            Whether to increase a sense of security at home or save money on heating or electricity bills,This means you can control your lighting, TV, wireless socket switches, blinds, thermostat and stereo within the same mobile application. No more searching for remotes, no more switching applications. Easily turn on some nice music while adjusting the lights to fit the mood.
+            consumers are realising that these systems not only provide convenience and simplify daily life,
+            but also cost efficiencies at a time when family budgeting is critical. Almost all consumers are interested in smart
+            home technology because they want their home to be more secure, cut costs of home energy bills and have the ability to monitor activity
+            while away from home.
+          </p>
+               
+            <h1>Technologies</h1>
+
+              <p>
+                  <ul>
+                    <li><a href="https://sdkcarlos.github.io/sites/artyom.html">Artyom.js</a> - A voice control - voice commands - speech recognition and speech synthesis javascript library.</li>    
+                    <li><a href="https://github.com/sockjs">Sock.js</a> - to inform clients about any changes in the system</li>
+                    <li><a href="http://jmesnil.net/stomp-websocket/doc/">Stomp.js</a> his library provides a STOMP client for Web browser (using Web Sockets) </li>
+                    <li><a href="https://docs.angularjs.org/api">Angular.js </a>  It is a well known library written in JavaScript, used by us to play around with the data in the front-view </li>
+                    <li><a href="https://notifyjs.jpillora.com/">Notify.js</a>  It's a jQuery plugin used to provide notifications when the state of the device is changes</li>
+                    <li><a href="http://spring.io/projects/spring-boot">Spring Boot</a> - help us to make a stand-alone, production-grade Spring based Applications that we just run.</li>
+                    <li><a href="https://gradle.org/">Gradle Build Tool </a> - helps teams build, automate and deliver better software, faster</li>
+                    <li><a href="https://www.mongodb.com/">Mongo DB</a> - used for store data about devices and their status</li>
+                  </ul> 
+
+                  <h1>User interaction</h1>
+                  <p> Interaction design aims to define and facilitate interaction between human beings and the application. <b>Simplicity</b> is our
+                    key-point, we wanted to offer a solution in order to satisfy the user's needs, to be reliable and intuitive.
+                    </p>
+                    <p>
+                    The global interaction behavior of the system was designed to accept two methods of interaction:
+                    <ul>
+                      <li>
+                         Using control by writing  - the user interacts with the system by writting commands in the input area. 
+                      </li>
+                      
+                      <li>
+                          Using voice control - the user uses his voice to control the system. There is an virtual assistant which is ready to listen the commands and offer feedback about the execution.
+                       </li>
+                    </ul>
+                    </p>
+                
+                  <h1>Interaction design patterns</h1>
+
+                  <p>
+                      <ul>
+                        <li><a href="http://ui-patterns.com/patterns/notifications">Notifications</a> - when a device is turned on/off all members which are paired with that device will be notify about the change</li>
+                        <li><a href="http://ui-patterns.com/patterns/TableFilter">Filtering</a> - complete for textbox area while you search a specific device </li>
+                        <li><a href="http://ui-patterns.com/patterns/AdaptableView">Adaptable view </a> - our website will be available on different platforms(mobile/desktop/tv)</li>
+                        <li><a href="http://ui-patterns.com/patterns/ContinuousScrolling">Continous scrolling</a> - the list of available devices will continously show up while scrolling down</li>
+                      </ul> 
+                  </p>
+
+                  
+                <h1>What Geron can really do</h1>
+                <p>
+                  Geron is a responsive web application available on different devices (mobile, tablet, tv, computer).
+                  It is great at helping you to relax and have fun, too. Using our app you can:
+                  <ul>
+                  <li>Control your TV with your voice.</li>
+                  <li>Turn on/off the smart vacuum cleaner, or the washing machine.</li>
+                  <li>Turn on/off the lights. </li>
+                  <li>Play music, using a radio or an audio system.</li>
+                  <li>Make a coffe, starting, of course, the coffe machine.</li>
+                  <li>Control all the connected devices from home</li>
+                
+                 </ul>
+                 All of these, when you are at home or in another location, from distance.
+                </p>
+            
+            <h2>Conclusion</h2>
+            <p>We succeded to implement an user-friendly application, with simple, easy to use functionalities, which offers an nice way to interract with devices. </p>
+           <p>
+          
+         </p>
+    <footer>
+
+    </footer>
+  </body>
+</html>

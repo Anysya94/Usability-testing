@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Geron App Project</title>
+    <link rel="stylesheet" href="scholarly.css">
+    <link rel="stylesheet" href="node_modules/prismjs/themes/prism-coy.css">
+    <script src="node_modules/prismjs/prism.js" defer></script>
+  </head>
+  <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+      <p class="title">Geron App</p>
+      <p class="subtitle">Scholarly Html Technical Report </p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+      <h1><img src="images/MainLOGO.png" style="width:35px;height:35px; margin-right:15px; margin-top:10px"> <div style="padding-top:20px; padding-bottom:20px">Geron App</div></h1>
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" href="https://bitbucket.org/lordusmd/" typeof="schema:Person">
+              <span property="schema:givenName">Tetelea</span>
+              <span property="schema:familyName">Alexandru</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:alexandru.tetelea@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" href="https://bitbucket.org/anisia_lupu/" typeof="schema:Person">
+              <span property="schema:givenName">Anisia-Ioana</span>
+              <span property="schema:familyName">Lupu</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:ioana.lupu@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+        </ol>
+        <ol>
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:author" href="http://profs.info.uaic.ro/~busaco" typeof="schema:Person">
+              <span property="schema:givenName">Dr. Sabin-Corneliu</span>
+              <span property="schema:familyName">Buraga</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:busaco@info.uaic.ro" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:author" href="http://??" typeof="schema:Person">
+              <span property="schema:givenName">Alecsandru</span>
+              <span property="schema:familyName">Grigoriu</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:??" title="corresponding author">&#9993;</a>
+            </sup>
+          </li>
+        </ol>
+      </section>
+
+      <section typeof="sa:Abstract" id="abstract">
+        <h2>Abstract</h2>
+      </p>  Our challenge is to build a
+      smart application which using gestures from users can connects to lots of different devices from different brands. 
+      This means you can control your lighting, TV, wireless socket switches, blinds, thermostat and stereo within the same
+       mobile application. No more searching for remotes, 
+      no more switching applications. Easily turn on some nice music while adjusting the lights to fit the mood.
+    </p>
+      </section>
+      <section typeof="sa:MaterialsAndMethods" id="motivation">
+        <h2>Motivation</h2>
+        <p>
+          In the past few years, there has been a huge interest to bring smart home technology to the fore,
+            Whether to increase a sense of security at home or save money on heating or electricity bills,This means you can control your lighting, TV, wireless socket switches, blinds, thermostat and stereo within the same mobile application. No more searching for remotes, no more switching applications. Easily turn on some nice music while adjusting the lights to fit the mood.
+            consumers are realising that these systems not only provide convenience and simplify daily life,
+            but also cost efficiencies at a time when family budgeting is critical. Almost all consumers are interested in smart
+            home technology because they want their home to be more secure, cut costs of home energy bills and have the ability to monitor activity
+            while away from home.
+          </p>
+      
+        <h1>Branding</h1>
+        <figure typeof="sa:Image">
+            <img src="images/logo.png" width="950" height="700" >
+            <figcaption style="text-align: center" >
+                Application Logo
+            </figcaption>
+          </figure>
+
+          <h1>User Flow</h1>
+          <figure typeof="sa:Image">
+            <img src="images/User Flow.jpg" width="950" height="700" >
+   
+          </figure>
+ 
+              <h1>Interaction design patterns</h1>
+              <p>The most common design patterns we intend to use in the application are :</p>
+              <p>
+                  <ul>
+                    <li><a href="http://ui-patterns.com/patterns/notifications">Notifications</a> - when a device is turned on/off all members which are paired with that device will be notify about the change</li>
+                    <li><a href="http://ui-patterns.com/patterns/pull-to-refresh">Pull to refresh </a> - on mobile, in order to update the list of devices on the main screen, user have to pull down the screen </li>
+                    <li><a href="http://ui-patterns.com/patterns/Autocomplete">Autocomplete</a> - complete for textbox area while you search a specific device </li>
+                    <li><a href="http://ui-patterns.com/patterns/Guided-tour">Guided Tour </a> - when the first time a user logs in the web app, he/she will have a guided tour</li>
+                    <li><a href="http://ui-patterns.com/patterns/AccountRegistration">Account registration</a> - in order to use the application, the user has to register</li>
+                    <li><a href="http://ui-patterns.com/patterns/AdaptableView">Adaptable view </a> - our website will be available on different platforms(mobile/desktop/tv)</li>
+                    <li><a href="http://ui-patterns.com/patterns/ContinuousScrolling">Continous scrolling</a> - the list of available devices will continously show up while scrolling down</li>
+                    <li><a href="http://ui-patterns.com/patterns/PasswordStrengthMeter">Password Password Strength Meter </a> - security is a very important aspect which we must take into account</li>
+
+                  </ul> 
+                  Mobil - List Devices
+               <h1>Concept 1 - Mobile</h1>  
+                 <figure typeof="sa:Image">
+                    <img src="images/Main window.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                        Mobile - Main window
+                    </figcaption>
+                  </figure>
+                  
+               <figure typeof="sa:Image">
+                  <img src="images/Devices list.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                    Devices list
+                  </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/Mobile - Main innactive.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                        Mobile - Main screen innactive
+                    </figcaption>
+                  </figure>
+                  <figure typeof="sa:Image">
+                      <img src="images/Mobile - Main active.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                          Mobile - Main screen active
+                      </figcaption>
+                    </figure>
+               <figure typeof="sa:Image">
+                  <img src="images/Mobil - List Devices.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                      Mobile - List Devices
+                  </figcaption>
+                </figure>
+
+                    <figure typeof="sa:Image">
+                        <img src="images/StoryBoard Mobile.png" width="950" height="700" >
+                        <figcaption style="text-align: center" >
+                            Mobile - Storyboard
+                        </figcaption>
+                      </figure>
+                    <figure typeof="sa:Image">
+                        <img src="images/DashBoard - StoryBoard.png" width="950" height="700" >
+                        <figcaption style="text-align: center" >
+                            Mobile - Storyboard
+                        </figcaption>
+                      </figure>
+
+               <h1>Concept 2 - Smart Watch</h1>
+               <figure typeof="sa:Image">
+                  <img src="images/Watch - main innactive.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                      Watch - Main screen innactive
+                  </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/Watch - main active.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                        Watch - Main screen active
+                    </figcaption>
+                  </figure>
+               <figure typeof="sa:Image">
+                  <img src="images/watch - devices list.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                      Watch - devices list
+                  </figcaption>
+                </figure>
+
+  
+
+                    <figure typeof="sa:Image">
+                        <img src="images/StoryBoard-watch.png" width="950" height="700" >
+                        <figcaption style="text-align: center" >
+                           Watch - StoryBoard
+                        </figcaption>
+                      </figure>
+
+               <h1>Concept 3 - AI Home</h1>
+               <figure typeof="sa:Image">
+                  <img src="images/StoryBoard-AIHOME.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                      AI Home StoryBoard
+                  </figcaption>
+                </figure>
+          
+
+               <h1>Concept 4 - Browser</h1>
+
+               <figure typeof="sa:Image">
+                  <img src="images/Main innactive.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                     Desktopt main screen inactive
+                  </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/Main active.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                       Desktop main screen
+                    </figcaption>
+                  </figure>
+               <figure typeof="sa:Image">
+                  <img src="images/Desktop sketch.png" width="950" height="700" >
+                  <figcaption style="text-align: center" >
+                     Desktop devices List
+                  </figcaption>
+                </figure>
+     
+         
+                <figure typeof="sa:Image">
+                    <img src="images/Main.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                       Desktop main screen
+                    </figcaption>
+                  </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/Devices List.desktop.png" width="950" height="700" >
+                    <figcaption style="text-align: center" >
+                       Desktop devices List
+                    </figcaption>
+                  </figure>
+                  <figure typeof="sa:Image">
+                      <img src="images/desktopStoryboard.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                         Desktop storyboard
+                      </figcaption>
+                    </figure>  
+
+
+
+
+                    <h2>Personas</h2>
+                    <figure typeof="sa:Image">
+                      <img src="images/Personas-jamie.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                        Primary persona
+                      </figcaption>
+                    </figure>
+            
+                    <figure typeof="sa:Image">
+                      <img src="images/melissa.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                        Secondary persona
+                      </figcaption>
+                    </figure>
+            
+                    <figure typeof="sa:Image">
+                      <img src="images/mircea.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                        Negative Persona
+                      </figcaption>
+                    </figure>
+            
+                    <figure typeof="sa:Image">
+                      <img src="images/ana.png" width="950" height="700" >
+                      <figcaption style="text-align: center" >
+                        Suplimental persona 
+                      </figcaption>
+                    </figure>
+           
+            <h2>Conclusion</h2>
+            
+            <h2>References</h2>
+            <p>
+          
+         </p>
+    <footer>
+
+    </footer>
+  </body>
+</html>
